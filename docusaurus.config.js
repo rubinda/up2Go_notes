@@ -42,7 +42,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/rubinda/up2Go_notes",
+          editUrl: "https://github.com/rubinda/up2Go_notes/blob/main",
         },
         blog: false,
         // blog: {
