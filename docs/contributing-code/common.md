@@ -15,14 +15,18 @@ You should have access to the [Up2Go organization](https://github.com/Up2Go) Git
 ## Clone and prepare a repository
 
 You should figure out where you need to implement the changes (e.g. _2Team_, _cprm_ or _clean_). Clone that repository (**with submodules**) using:
+
 ```bash
-git clone --recurse-submodules https://github.com/Up2Go/<repository>.git 
+git clone --recurse-submodules https://github.com/Up2Go/<repository>.git
 ```
+
 :::tip
 If you forgot to include the `--recurse-submodules` flag, you can initialize them with
+
 ```bash
 git submodule update --init
 ```
+
 :::
 
 You can also clone it from [Webstorm](/environment/webstorm#github) if you prefer an UI.
@@ -34,6 +38,7 @@ You should have the default dev hub configured. If not, see [Adding default Dev 
 :::
 
 Run the internal script from the project root to create a scratch org. You will develop and test your changes on it:
+
 ```bash
 bash dev-tools/rebuild-scratch-org.sh <customName>
 ```
@@ -43,25 +48,25 @@ If you encounter an error like _The specified org X is not a Dev Hub_ it most li
 :::
 
 You can choose any name for the scratch org. If it's already in use the existing scratch org be deleted and replaced. Once the script finishes, you should have a new scratch org ready
+
 ```bash
 sfdx org list
 ```
 
 <img
-  src={require('./img/sfdx-org_list.png').default}
-  alt="List of sfdx connections"
-  width="600px" 
+src={require('./img/sfdx-org_list.png').default}
+alt="List of sfdx connections"
+width="600px"
 />
-
 
 ### Telling WebStorm about it
 
 After you've opened WebStorm on a project for the first time, Illuminated Cloud will inform you with something like _Your project configuration is invalid_. Click on resolve and choose the newly generated scratch org connection (select your _customName_ you provided to the script).
 
 <img
-  src={require('./img/ic2-connection_resolve.png').default}
-  alt="Illuminated Cloud resolve invalid connection"
-  width="600px"
+src={require('./img/ic2-connection_resolve.png').default}
+alt="Illuminated Cloud resolve invalid connection"
+width="600px"
 />
 
 An offline symbol table will be generated, the project gets indexed and finally you should reload the project when prompted. If you enabled [Deploy on save](http://localhost:3000/environment/webstorm#illuminatedcloud) you could now change files and they _should_ reflect in your scratch org.
@@ -69,12 +74,11 @@ An offline symbol table will be generated, the project gets indexed and finally 
 :::tip
 You can change the active connection through Illuminated Cloud > Configure Project, also accessible from the toolbar. You should do this everytime you want to work on a new scratch org.
 <img
-    src={require('./img/webstorm_ic2-configure_project.png').default}
-    alt="Illuminated Cloud Configure Project"
-    width="600px"
+src={require('./img/webstorm_ic2-configure_project.png').default}
+alt="Illuminated Cloud Configure Project"
+width="600px"
 />
 :::
-
 
 ## Deploying to an Org
 
@@ -89,19 +93,54 @@ If you don't have a connection yet, check out [How to authorize an Org](/environ
 :::
 
 You can use the provided script to deploy to the org:
+
 ```bash
 bash dev-tools/deploy-mdapi-source.sh
 ```
 
 :::tip
 If you are unsure what exactly the alias needs to be, run the deploy script (on the right branch) and look for the packaging org line
-<img 
-  src={require('./img/devtools-deploy.png').default}
-  alt="Dev tools deploy example"
-  width="600px"
+<img
+src={require('./img/devtools-deploy.png').default}
+alt="Dev tools deploy example"
+width="600px"
 />
 
 This is defined in `dev-tools/lib/local-config.sh`
 :::
 
+## New components for the package
 
+:::tip
+If you referenced this new component in a previously existing class file, the new resource should be added automatically on deploy by salesforce.
+:::
+
+Whenever you deploy a new component (class or test class, custom object, custom metadata ...) you also need to add it to the package. After the deploy, open up the trunk org (the packaging org alias during deploy) and head to Setup > Package Manager and click on "2Team"
+
+<img
+src={require('./img/package-setup.png').default}
+alt="Package Manager view in setup"
+width="600px"
+/>
+
+After this click on "Add" in the package view
+
+<img
+src={require('./img/package-view.png').default}
+alt="Package Manager add components"
+width="600px"
+/>
+
+Browse through components and include your newly created ones. In my case I added a new custom object.
+
+<img
+src={require('./img/package-add.png').default}
+alt="Package Manager add component"
+width="600px"
+/>
+
+:::caution
+There are some components which we never wish to deploy, don't blindly add everything you see.
+:::
+
+In the previous view, search all the components (you can use the search page in your browser) to check they are preset in the list. I made sure all of my custom object's custom fields, record type name and page layout are included.
