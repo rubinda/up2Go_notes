@@ -45,7 +45,7 @@ You can also clone it from [Webstorm](/environment/webstorm#github) if you prefe
 ## Creating a Scratch Org
 
 :::note
-You should have the default dev hub configured. If not, see [Adding default Dev Hub](/environment/sfdx#adding-default-dev-hub)
+You should have the default dev hub configured. If not, see [Adding default Dev Hub](/environment/sf#adding-default-dev-hub)
 :::
 
 Run the internal script from the project root to create a scratch org. You will develop and test your changes on it:
@@ -100,7 +100,7 @@ If you're deploying a patch, [read this](/contributing-code/user-stories#working
 Before you can use the deploy script, you have to make sure you have the connections to the appropriate orgs (ask someone to be added) and the **correct aliases** to them. E.g. if you worked on a defect that needs to be present in Patch 13.9, you need an alias `UP2GO_2T-13.9-PACKAGE`. This is expected from the internal scripts. The same goes for regular user stories.
 
 :::tip
-If you don't have a connection yet, check out [How to authorize an Org](/environment/sfdx#authorizing-an-org).
+If you don't have a connection yet, check out [How to authorize an Org](/environment/sf#authorizing-an-org).
 :::
 
 You can use the provided script to deploy to the org:
