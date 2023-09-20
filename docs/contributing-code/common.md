@@ -10,7 +10,18 @@ description: The basics
 The official onboarding documentation provides [Software engineering practices](https://sites.google.com/up2go.com/up2go-devson-boarding/software-engineering-practices)
 :::
 
-You should have access to the [Up2Go organization](https://github.com/Up2Go) Github profile. If not, ask to be added to the team. The team uses [Trunk-based development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) with SCRUM. They also have a (custom developed) sprint board with user stories, defects and tech debts which you will probably work on in the future.
+You should have access to the [Up2Go organization](https://github.com/Up2Go) Github profile. If not, ask to be added to the team. The team uses [Trunk-based development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) with SCRUM.
+
+## The Sprint board
+
+We are using github projects to manage and distribute work. You can read more about it in the [user stories section](/contributing-code/user-stories).
+
+<img
+src={require('./img/projects_board.png').default}
+alt="Example view of the Core project"
+width="600px"
+/>
+
 
 ## Clone and prepare a repository
 

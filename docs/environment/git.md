@@ -21,9 +21,3 @@ You can leave the ssh key passphrase empty. Keeping your private key file stored
 :::
 
 tldr; [Generate a SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) > [Add the Key to your account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-
-### [HTTPS](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#https) (not recommended)
-
-Requires you to remember a PAT (you can only see it once on creation - you have to keep it safe just like a password). It also provides more fine-tuned access control. **Should you choose this path, you will have to study, modify and maintain your own deployment script version**.
-
-tldr; [Create a PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) > on login prompt enter PAT instead of password.

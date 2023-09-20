@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 sibebar_label: Trailhead
 description: Trails for setup
 ---

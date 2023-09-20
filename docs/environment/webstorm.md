@@ -33,7 +33,7 @@ Enter a license key (ask to be provided with one) under Tools > Illuminated Clou
   width="600px"
 />
 
-Under the Salesforce DX tab, provide a path to your `sfdx` executable (in terminal run `which sfdx`). You can also choose to push on save, which will automatically push changes to the Project connection on file save (check that "Deploy on save" is also enabled in "Validation and Deployment" tab):
+Under the Salesforce DX tab, provide a path to your `sf` executable (in terminal run `which sf`). You can also choose to push on save, which will automatically push changes to the Project connection on file save (check that "Deploy on save" is also enabled in "Validation and Deployment" tab):
 
 <img
   src={require('./img/ic2-sfdx.png').default}
@@ -74,9 +74,16 @@ for ssh:
 ```
 git@github.com:Up2Go/<Repository>.git
 ```
-if you use a PAT:
-```
-https://github.com/Up2Go/<Repository>.git
-```
 
-You can also add your account under Preferences > Version Control > Github.
+You can also add your account under Preferences > Version Control > Github. If you do this, you should be able to browse the repositories in a dropdown list and clone them with clicks.
+
+
+# New UI
+
+WebStorm has a new UI mode. _"Clean and modern-looking, the new UI helps focus on the work by minimizing on-screen clutter."_. You can turn it on under Settings > Appearance & Behaviour > New UI > Enable New UI (requires restart). In the picture below I am also using the One Dark theme and Fira Code font with ligatures enabled.
+
+<img 
+  src={require('./img/webstorm_newUI.png').default}
+  alt="Webstorm new UI"
+  width="600px"
+/>
