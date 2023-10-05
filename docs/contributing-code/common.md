@@ -61,12 +61,12 @@ If you encounter an error like _The specified org X is not a Dev Hub_ it most li
 You can choose any name for the scratch org. If it's already in use the existing scratch org be deleted and replaced. Once the script finishes, you should have a new scratch org ready
 
 ```bash
-sfdx org list
+sf org list
 ```
 
 <img
-src={require('./img/sfdx-org_list.png').default}
-alt="List of sfdx connections"
+src={require('./img/sf-org_list.png').default}
+alt="List of sf connections"
 width="600px"
 />
 
