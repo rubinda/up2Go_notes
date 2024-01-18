@@ -17,7 +17,12 @@ I highly recommed installing [Homebrew](https://brew.sh/) first, since it makes 
 
 ... installing requirements now becomes as simple as:
 ```shell
-brew update && brew install git node openjdk@17 jq
+brew update && brew install git nvm openjdk@17 jq
+```
+
+I prefer `nvm` since it provides an easy way to switch between node versions. You can choose to install node directly, but if you use nvm you also need to run an additional command:
+```shell
+nvm install --lts
 ```
 
 :::note
@@ -25,6 +30,8 @@ If you use ZSH like me, you might have to manually update your `~/.zshrc` to inc
 ```shell
 ...
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 ```
 :::
 
@@ -40,7 +47,7 @@ npm install @salesforce/cli --global
 ```shell
 sf --version
 ```
-In my case it returns `@salesforce/cli/2.8.11 darwin-x64 node-v18.14.2`
+In my case it returns `@salesforce/cli/2.24.4 darwin-x64 node-v20.11.0`
 
 ## sfdx plugins
 

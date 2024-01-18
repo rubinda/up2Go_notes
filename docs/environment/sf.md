@@ -10,7 +10,7 @@ description: How to setup the Salesforce DX tool
 Salesforce constantly updates the tool and might deprecate some commands used in our internal scripts. Updating could cause you unexpected issues. 
 :::
 
-Currently I'm running `@salesforce/cli/2.8.11 darwin-x64 node-v18.14.2` without any issues (internal scripts have deprecated commands, but they still work fine-ish).
+Currently I'm running `@salesforce/cli/2.24.4 darwin-x64 node-v20.11.0`.
 
 ### Authorizing an ORG
 
@@ -41,7 +41,7 @@ Non-scratch orgs
 | (D) UP2GO-PRODUCTION             <username>@up2go.com           00D50000000XXXXXXX Connected
 ```
 
-:::tip
+:::note
 If you forgot the `-d` or `--set-default-dev-hub` option and now the (D) is missing, run:
 ```bash
 sf config set --global target-dev-hub=<username>@up2go.com
@@ -49,3 +49,11 @@ sf config set --global target-dev-hub=<username>@up2go.com
 :::
 
 You should be now ready to run the internal script that lets you create scratch orgs.
+
+:::tip
+If you're using a shell environment, you can create a shortcut to our org:
+```bash
+alias up2go="sf org open -o <username>@up2go.com"
+```
+This adds a command called `up2go` that opens our org. To have it persisted, add it to you `~/.bashrc` or `~/.zshrc` file.
+:::

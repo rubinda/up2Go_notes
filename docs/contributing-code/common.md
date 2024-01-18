@@ -51,11 +51,11 @@ You should have the default dev hub configured. If not, see [Adding default Dev 
 Run the internal script from the project root to create a scratch org. You will develop and test your changes on it:
 
 ```bash
-bash dev-tools/rebuild-scratch-org.sh <customName>
+zsh dev-tools/rebuild-scratch-org.sh <customName>
 ```
 
 :::info
-If you encounter an error like _The specified org X is not a Dev Hub_ it most likely means you don't have the (S) Up2Go Special Developer Permissions.
+If you encounter an error like _The specified org X is not a Dev Hub_ it most likely means you don't have the (S) Up2Go Special Developer Permissions in our org.
 :::
 
 You can choose any name for the scratch org. If it's already in use the existing scratch org be deleted and replaced. Once the script finishes, you should have a new scratch org ready
@@ -106,7 +106,7 @@ If you don't have a connection yet, check out [How to authorize an Org](/environ
 You can use the provided script to deploy to the org:
 
 ```bash
-bash dev-tools/deploy-mdapi-source.sh
+zsh dev-tools/deploy-mdapi-source.sh
 ```
 
 :::tip

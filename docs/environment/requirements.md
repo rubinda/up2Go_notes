@@ -8,14 +8,14 @@ description: List of applications, tools, extensions, plugins.
 
 ### Applications
 - [WebStorm](https://www.jetbrains.com/webstorm/) _the enterprise solution (in combination with a paid plugin) for writing Salesforce code_
-- [VS Code](https://code.visualstudio.com) _FOSS alternative to WebStorm_
-- Salesforce inspector plugin for [Chromium](https://chrome.google.com/webstore/detail/salesforce-inspector/aodjmnfhjibkcdimpodiifdjnnncaafh?hl=en) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/salesforce-inspector/) - _makes life easier to inspect or modify data on an org_
+- [VS Code](https://code.visualstudio.com) _(alternative) option for a more lightweight editor_
+- [Salesforce inspector reloaded](https://github.com/tprouvot/Salesforce-Inspector-reloaded) plugin for [Chromium](https://chromewebstore.google.com/detail/salesforce-inspector-relo/hpijlohoihegkfehhibggnkbjhoemldh?pli=1) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/salesforce-inspector-reloaded/) - _makes life easier to inspect or modify data on an org_
 
 ### Command line tools
 - [git](https://git-scm.com/) - _to manage collaborative coding_
 - [NodeJS](https://nodejs.org/en/) - _sf requirement_
 - [Java](https://www.oracle.com/java/technologies/downloads/) - _requirement for `sfdx-scanner` plugin. You need the runtime only_
-- [jq](https://stedolan.github.io/jq/) - _internal scripts maybe? (no idea atm)_
+- [jq](https://stedolan.github.io/jq/) - _internal scripts use it for parsing command output_
 - [sf](https://developer.salesforce.com/tools/sfdxcli) - _official Salesforce CLI tool_
 - [sfdx-browserforce-plugin](https://github.com/amtrack/sfdx-browserforce-plugin) - _used in internal scripts for configuring scratch orgs_
 - [sfdx-scanner](https://forcedotcom.github.io/sfdx-scanner/) -  _lints Apex code in a husky pre-commit hook_

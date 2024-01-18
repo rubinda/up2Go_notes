@@ -9,10 +9,10 @@ description: Steps to make it Salesforce ready
 :::tip
 Install WebStorm via [Jetbrains Toolbox App](https://www.jetbrains.com/toolbox-app/) - makes updates easier, especially on Linux.
 :::
-You should get a license to use it from someone.
+You should get a license to use it - just ask for it if you don't have it already.
 
 :::caution
-In the past, I've had some issues after immediately updating WebStorm which _broke_ some Illuminated Cloud functionality. It was resolved by the IC2 team, but it took some time. Update with care.
+In the past, I've had some issues after immediately updating WebStorm which _broke_ some Illuminated Cloud (the plugin for salesforce development) functionality. It was resolved by the IC2 team, but it took some time. Update with care.
 :::
 
 ### Illuminated Cloud 2
