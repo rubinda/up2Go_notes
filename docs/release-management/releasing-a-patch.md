@@ -77,11 +77,11 @@ width="600px"
 
 ### Deprecate the previous patch
 
-In the packaging org under Setup > Package Manager > {2Team | CPRM} > Versions you should click on "Deprecate" for the previously released patch version.
+In the packaging org under Setup \> Package Manager \> (2Team | CPRM) \> Versions you should click on "Deprecate" for the previously released patch version.
 
 ### Github release
 
-On the github repository (2Team or CPRM) create a new release from the patch branch (_2Team or cprm_ > Releases > Draft a new release). You should set the following details:
+On the github repository (2Team or CPRM) create a new release from the patch branch (_2Team or cprm_ \> Releases \> Draft a new release). You should set the following details:
 
 ```
         Tag: v.{Major.Minor.Patch}

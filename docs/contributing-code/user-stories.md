@@ -45,7 +45,7 @@ git checkout -b <branchName>
 git switch -c <branchName>
 ```
 
-You can also create a new branch from WebStorm if you prefer an UI. Under Git > New Branch or in the bottom right branches menu:
+You can also create a new branch from WebStorm if you prefer an UI. Under Git \> New Branch or in the bottom right branches menu:
 
 <img
 src={require('./img/webstorm-git_shortcut.png').default}

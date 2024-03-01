@@ -126,7 +126,7 @@ This is defined in `dev-tools/lib/local-config.sh`
 If you referenced this new component in a previously existing class file, the new resource should be added automatically on deploy by salesforce.
 :::
 
-Whenever you deploy a new component (class or test class, custom object, custom metadata ...) you also need to add it to the package. After the deploy, open up the trunk org (the packaging org alias during deploy) and head to Setup > Package Manager and click on "2Team"
+Whenever you deploy a new component (class or test class, custom object, custom metadata ...) you also need to add it to the package. After the deploy, open up the trunk org (the packaging org alias during deploy) and head to Setup \> Package Manager and click on "2Team"
 
 <img
 src={require('./img/package-setup.png').default}
