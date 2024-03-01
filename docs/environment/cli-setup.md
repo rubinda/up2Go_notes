@@ -47,11 +47,11 @@ npm install @salesforce/cli --global
 ```shell
 sf --version
 ```
-In my case it returns `@salesforce/cli/2.24.4 darwin-x64 node-v20.11.0`
+In my case it returns `@salesforce/cli/2.29.5 darwin-x64 node-v20.11.0`
 
-## sfdx plugins
+## sf plugins
 
-Once you have sfdx installed you can run: 
+Once you have sf installed you can run: 
 ```shell
 sf plugins install @salesforce/sfdx-scanner sfdx-browserforce-plugin
 ```
