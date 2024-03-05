@@ -44,7 +44,7 @@ Unless instructed otherwise, set the following fields:
 ```
  Version Name: {Verison Number} ({CPRM|2Team})
                // e.g. "14.1.5 (CPRM)"
- Release Type: Managed
+ Release Type: Managed - Released
      Password: <censored, see below>
 ```
 Look for the password in our [Release process document](https://docs.google.com/document/d/1MFuYL1Yb6tdlKve-IgCPyDWNwZK9_yV9aS-kEP-R-Vc/edit?usp=sharing).
