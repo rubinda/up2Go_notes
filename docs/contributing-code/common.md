@@ -28,7 +28,7 @@ width="600px"
 You should figure out where you need to implement the changes (e.g. _2Team_, _cprm_ or _clean_). Clone that repository (**with submodules**) using:
 
 ```bash
-git clone --recurse-submodules https://github.com/Up2Go/<repository>.git
+git clone --recurse-submodules git@github.com:Up2Go/<repository>.git
 ```
 
 :::tip
