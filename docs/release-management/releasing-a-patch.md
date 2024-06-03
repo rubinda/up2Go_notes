@@ -126,7 +126,7 @@ alt="Up2Go org All package versions"
 width="600px"
 />
 
-Open the Package Version details and add the product release. It differs based on the Major.Minor version, consult the previous package version to figure out which release it belongs to if you are unsure. E.g. for finding the product release for _13.9.14 (CPRM)_ open _13.9.13 (CPRM)_.
+Open the Package Version details and add the product release. It differs based on the Major.Minor version, consult the previous package version to figure out which release it belongs to if you are unsure. E.g. for finding the product release for _13.9.14 (CPRM)_ open _13.9.13 (CPRM)_. You should also populate the "GIT" link to the appropriate Github release.
 
 <img
 src={require('./img/release_patch-package_version.png').default}
@@ -134,26 +134,6 @@ alt="Up2Go org Package version details"
 width="600px"
 />
 
-Open the Product Release you just linked and update the "Latest Package Version" to the one you uploaded. Pay attention you don't set a 2Team package version on a CPRM product release and vice versa.
-
-<img
-src={require('./img/release_patch-product_release.png').default}
-alt="Up2Go org Product release details"
-width="600px"
-/>
-
-On the right side also create a new Patch for the Product Release. The easiest approach is to copy the name from the latest previous patch and adjust the version and index. Check the image below for an example on how it should look.
-```
-     Patch Name: ([CPRM|2Team]) {Product Release Name} Patch {patch index} (Major.Minor.Patch)
-Package Version: // the one you uploaded
-            Git: // url to the github release
-```
-
-<img
-src={require('./img/release_patch-new_product_patch.png').default}
-alt="Up2Go org new Product Patch"
-width="600px"
-/>
 
 ### Inform the right people
 
