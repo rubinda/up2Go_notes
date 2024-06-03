@@ -17,22 +17,11 @@ I highly recommed installing [Homebrew](https://brew.sh/) first, since it makes 
 
 ... installing requirements now becomes as simple as:
 ```shell
-brew update && brew install git nvm openjdk@17 jq
-```
-
-I prefer `nvm` since it provides an easy way to switch between node versions. You can choose to install node directly, but if you use nvm you also need to run an additional command:
-```shell
-nvm install --lts
+brew update && brew install git node@20 openjdk@17 jq
 ```
 
 :::note
-If you use ZSH like me, you might have to manually update your `~/.zshrc` to include:
-```shell
-...
-export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-```
+Make sure to follow any additional steps that are required when installing these packages (e.g. manually adding them to your PATH) or you might get a "command not found" error. If you read the output of `brew install` it should inform you if any additional actions are required.
 :::
 
 ### sf (previously sfdx)
