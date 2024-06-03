@@ -6,9 +6,11 @@ description: List of applications, tools, extensions, plugins.
 
 # Requirements
 
+The goto toolset for 2Team and CPRM development is Webstorm (licensed) + IC2 (licensed). For developing the newer share package we use a devcontainer with VS Code.
+
 ### Applications
 - [WebStorm](https://www.jetbrains.com/webstorm/) _the enterprise solution (in combination with a paid plugin) for writing Salesforce code_
-- [VS Code](https://code.visualstudio.com) _(alternative) option for a more lightweight editor_
+- [VS Code](https://code.visualstudio.com) _(alternative, needed for decvcontainers) a more lightweight editor_
 - [Salesforce inspector reloaded](https://github.com/tprouvot/Salesforce-Inspector-reloaded) plugin for [Chromium](https://chromewebstore.google.com/detail/salesforce-inspector-relo/hpijlohoihegkfehhibggnkbjhoemldh?pli=1) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/salesforce-inspector-reloaded/) - _makes life easier to inspect or modify data on an org_
 
 ### Command line tools
@@ -21,6 +23,7 @@ description: List of applications, tools, extensions, plugins.
 - [sfdx-scanner](https://forcedotcom.github.io/sfdx-scanner/) -  _lints Apex code in a husky pre-commit hook_
 
 ### Nice to haves (optional)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) - in case you wish to use devcontainer + VSCode
 - [iTerm](https://iterm2.com/) - (macOS) _the tmux and tab support should be reason enough to use it_
 - [Homebrew](https://brew.sh/) - (macOS) _the missing package manager for macOS_
 - [oh my zsh](https://ohmyz.sh/) - _because it makes the command line much more pleasant_

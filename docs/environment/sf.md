@@ -10,7 +10,7 @@ description: How to setup the Salesforce DX tool
 Salesforce constantly updates the tool and might deprecate some commands used in our internal scripts. Updating could cause you unexpected issues. 
 :::
 
-Currently I'm running `@salesforce/cli/2.29.5 darwin-x64 node-v20.11.0`.
+Currently I'm running `@salesforce/cli/2.42.6 darwin-x64 node-v20.11.0`.
 
 ### Authorizing an ORG
 

@@ -42,7 +42,11 @@ git submodule update --init
 
 You can also clone it from [Webstorm](/environment/webstorm#github) if you prefer an UI.
 
-## Creating a Scratch Org
+## Legacy workflow
+
+The following applies whenever you are working with 2Team or CPRM. The newer repositories use 2GP, so the workflow is a little different.
+
+### Creating a Scratch Org 
 
 :::note
 You should have the default dev hub configured. If not, see [Adding default Dev Hub](/environment/sf#adding-default-dev-hub)
@@ -70,7 +74,7 @@ alt="List of sf connections"
 width="600px"
 />
 
-### Telling WebStorm about it
+#### Telling WebStorm about it
 
 After you've opened WebStorm on a project for the first time, Illuminated Cloud will inform you with something like _Your project configuration is invalid_. Click on resolve and choose the newly generated scratch org connection (select your _customName_ you provided to the script).
 
@@ -91,7 +95,7 @@ width="600px"
 />
 :::
 
-## Deploying to an Org
+### Deploying to an Org
 
 :::danger
 If you're deploying a patch, [read this](/contributing-code/user-stories#working-on-defects) first.
@@ -120,7 +124,7 @@ width="600px"
 This is defined in `dev-tools/lib/local-config.sh`
 :::
 
-## New components for the package
+### New components for the package
 
 :::tip
 If you referenced this new component in a previously existing class file, the new resource should be added automatically on deploy by salesforce.

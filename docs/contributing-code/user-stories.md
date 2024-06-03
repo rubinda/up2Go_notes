@@ -97,7 +97,7 @@ sf apex run test -o <target_org>
 
 ## Pull request review done
 
-Congratulations 🎉 You now have to deploy it to the appropriate orgs, (potentially) update references, merge to main / patch branches.
+Congratulations 🎉 You now have to (potentially) update references, merge to main / develop branches.
 
 :::caution
 For a cleaner main branch, **always merge main into your own branch first** on any repository you've worked on:
@@ -108,7 +108,11 @@ git checkout <myBranch> && git merge main
 ```
 :::
 
-### Deploy
+## Legacy
+
+The section onward from here is considered to be used with 2Team or CPRM. The newer [share repository](https://github.com/Up2Go/shaRe-SF) has it's own workflow.
+
+###  Deploy
 
 **You should always deploy before merging to main**. The strategies slightly differ with user story types (defects, working on clean, normal user stories) hence it isn't automatic.
 

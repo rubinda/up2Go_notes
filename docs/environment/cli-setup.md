@@ -8,6 +8,8 @@ description: How to setup the command line
 
 ## macOS
 
+Follow these steps if you do not wish to use devcontainers with VS Code.
+
 ### Prerequisites
 
 I highly recommed installing [Homebrew](https://brew.sh/) first, since it makes life easier with fewer clicks:
@@ -36,7 +38,6 @@ npm install @salesforce/cli --global
 ```shell
 sf --version
 ```
-In my case it returns `@salesforce/cli/2.29.5 darwin-x64 node-v20.11.0`
 
 ## sf plugins
 

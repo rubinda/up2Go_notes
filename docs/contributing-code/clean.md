@@ -6,6 +6,11 @@ description: Contributing to the submodule
 
 # Clean repository
 
+
+:::note
+"Clean" is only being used in 2Team and CPRM.
+:::
+
 It contains custom implementations that are meant to be used in other repositories. Hence it is present as a git submodule. 
 
 ## How we update it

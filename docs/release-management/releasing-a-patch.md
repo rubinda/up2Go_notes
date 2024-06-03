@@ -6,6 +6,10 @@ description: Need to fix a bug in a released verson?
 
 # Releasing a patch
 
+:::note
+The following has been written for the patch creation process for 2Team and / or CPRM which uses 1GP. If you are not working on either of these two repositories, you can ignore this section.
+:::
+
 ### Prerequisites
 
 In order to release a patch you need to have access to our appropriate patch org (w/ admin access). You can also consult the official documentation and read about the general patch upload process: [Create and Upload Patches in First-Generation Managed Packages](https://developer.salesforce.com/docs/atlas.en-us.pkg1_dev.meta/pkg1_dev/patches_creating.htm#patches_creating).
