@@ -12,7 +12,7 @@ Install WebStorm via [Jetbrains Toolbox App](https://www.jetbrains.com/toolbox-a
 You should get a license to use it - just ask for it if you don't have it already.
 
 :::caution
-In the past, I've had some issues after immediately updating WebStorm which _broke_ some Illuminated Cloud (the plugin for salesforce development) functionality. It was resolved by the IC2 team, but it took some time. Update with care.
+In the past, I've had some issues after immediately updating WebStorm which _broke_ some Illuminated Cloud (the plugin for salesforce development) functionality. It was resolved by the IC2 team, but it took some time. Update with care and consider reading Illuminated Cloud release notes before updating Webstorm.
 :::
 
 ### Illuminated Cloud 2

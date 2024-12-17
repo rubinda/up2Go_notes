@@ -22,7 +22,7 @@ The goto toolset for 2Team and CPRM development is Webstorm (licensed) + IC2 (li
 - [sfdx-browserforce-plugin](https://github.com/amtrack/sfdx-browserforce-plugin) - _used in internal scripts for configuring scratch orgs_
 - [sfdx-scanner](https://forcedotcom.github.io/sfdx-scanner/) -  _lints Apex code in a husky pre-commit hook_
 
-### Nice to haves (optional)
+### Nice to haves (totally optional)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) - in case you wish to use devcontainer + VSCode
 - [iTerm](https://iterm2.com/) - (macOS) _the tmux and tab support should be reason enough to use it_
 - [Homebrew](https://brew.sh/) - (macOS) _the missing package manager for macOS_

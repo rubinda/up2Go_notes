@@ -11,9 +11,11 @@ description: Contributing to the submodule
 "Clean" is only being used in 2Team and CPRM.
 :::
 
-It contains custom implementations that are meant to be used in other repositories. Hence it is present as a git submodule. 
+It contains custom implementations of generic functions that are meant to be used in other repositories. I do not like it and I try to avoid working on it, but it is already heavily used as a submodule.
 
 ## How we update it
+
+I prefer working on it as described in the next paragraph, but you can also clone the project in it's separate directory and update the submodule in 2Team or CPRM to your branch as needed for testing.
 
 Create a new branch in the project subdirectory for the clean repository. Implement changes and commit them from the clean subdirectory - this way you are commiting to the branch on clean. In VS Code you can see these changes in the Git panel, the red ones represent the parent repository,
 the orange ones will be made to the clean repository. 

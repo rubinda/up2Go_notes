@@ -8,7 +8,9 @@ description: How to setup the command line
 
 ## macOS
 
-Follow these steps if you do not wish to use devcontainers with VS Code.
+Follow these steps if you:
+    - have to work on 2Team / CPRM (no devcontainer available - you can build one if you want)
+    - do not wish to use devcontainers with VS Code on the newer share repository (check out the README there for instructions)
 
 ### Prerequisites
 
@@ -17,7 +19,7 @@ I highly recommed installing [Homebrew](https://brew.sh/) first, since it makes 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-... installing requirements now becomes as simple as:
+... installing requirements with it is as simple as:
 ```shell
 brew update && brew install git node@20 openjdk@17 jq
 ```

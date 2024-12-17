@@ -6,7 +6,7 @@ description: If IntelliJ isn't for you
 
 # What About VS Code?
 
-WebStorm is nice if you have to debug Apex tests, or look through Debug logs, as IlluminatedCloud provides ease of use when fetching and filtering the logs with WebStorm. However! VS Code is amazing and it also works good with SF development. It is in active use throughout the company and I use it too, altough I prefer WebStorm + IC2 for debugging Apex. 
+WebStorm is nice because the Intellisense suggests you everything - it is broken sometimes, but mostly it works great. However! VS Code is amazing and it also works good with SF development - replaying an Apex debug log is nice and great to find issues. It is in active use throughout the company and I use it too for fixing small issues and I prefer WebStorm + IC2 for implementing bigger features.
 
 The guys working on fiber (and now share) also have setup a [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers). More information on how to use it is available in our [share repository](https://github.com/Up2Go/shaRe-SF).
 

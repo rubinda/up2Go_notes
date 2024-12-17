@@ -42,7 +42,7 @@ git submodule update --init
 
 You can also clone it from [Webstorm](/environment/webstorm#github) if you prefer an UI.
 
-## Legacy workflow
+## 2Team/CPRM workflow
 
 The following applies whenever you are working with 2Team or CPRM. The newer repositories use 2GP, so the workflow is a little different.
 
@@ -84,7 +84,7 @@ alt="Illuminated Cloud resolve invalid connection"
 width="600px"
 />
 
-An offline symbol table will be generated, the project gets indexed and finally you should reload the project when prompted. If you enabled [Deploy on save](http://localhost:3000/environment/webstorm#illuminatedcloud) you could now change files and they _should_ reflect in your scratch org.
+An offline symbol table will be generated, the project gets indexed and finally you should reload the project when prompted. If you enabled [Deploy on save](/environment/webstorm#illuminatedcloud) you could now change files and they _should_ reflect in your scratch org.
 
 :::tip
 You can change the active connection through Illuminated Cloud > Configure Project, also accessible from the toolbar. You should do this everytime you want to work on a new scratch org.
@@ -158,4 +158,4 @@ width="600px"
 There are some components which we never wish to deploy, don't blindly add everything you see.
 :::
 
-In the previous view, search all the components (you can use the search page in your browser) to check they are preset in the list. I made sure all of my custom object's custom fields, record type name and page layout are included.
+In the previous view, search all the components (you can use the search page in your browser) to check they are present in the list. I made sure all of my custom object's custom fields, record type name and page layout are included.
